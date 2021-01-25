@@ -100,3 +100,11 @@ a, span {
   text-decoration: none;
   color: inherit;
 }
+/* base start */
+.container{
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+/* base end */
