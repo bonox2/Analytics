@@ -75,7 +75,10 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  color: var(--color);
 }
 ol, ul {
 	list-style: none;
@@ -100,7 +103,16 @@ a, span {
   text-decoration: none;
   color: inherit;
 }
+button{
+  color: var(--color);
+}
 /* base start */
+:root{
+  --theme-color-1: #172755;
+  --theme-color-2: #EF2A82;
+  --color:#8794BA;
+  --color-1: #fff;
+}
 .container{
   width: 100%;
   max-width: 1180px;
@@ -108,3 +120,41 @@ a, span {
 }
 
 /* base end */
+/* header start */
+.header{
+  padding-top:50px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+}
+.logo{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  width: 16%;
+  color: var(--color-1);
+}
+.header-btns button{
+  background-color: transparent;
+  border: none;
+}
+/* header end */
+/* hero start */
+.hero{
+  background-image: url("../img/hero-background.webp") no-repeat / cover;
+  height: auto;
+}
