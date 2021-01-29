@@ -1,48 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="preload" href="./css/style.css" as="style" />
-    <link rel="preload" href="./css/all.css" as="style" />
+    <link rel="preload" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" as="style" crossorigin="anonymous" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Analytics</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/all.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <meta name="description" content="Monitor your business on real-time dashboard">
   </head>
   <body>
     <section>
       <header class="header">
         <div class="container">
           <nav class="nav">
-            <a class="logo" href="index.html" >
-              <img
-                loading="lazy"
-                src="./img/logo.svg"
-                alt="logo"
-                width="40px"
-                height="40px"
-              />
-              <div>Analytics</div>
+            <a class="logo" href="index.html">
+              <img loading="lazy" src="./img/logo.svg" alt="logo" width="40px" height="40px" />
+              Analytics
             </a>
-            <ul class="navbar">
-              <li>
-                <a href="#Products">Products</a>
-              </li>
-              <li>
-                <a href="#Pricing">Pricing</a>
-              </li>
-              <li>
-                <a href="#FAQ">FAQ</a>
-              </li>
-              <li>
-                <a href="#Blog">Blog</a>
-              </li>
-            </ul>
-            <div class="header-btns">
-              <button class="header-btn">Sign in</button>
-              <button class="header-btn">Sign up</button>
+            <div class="burger-menu" id="burgerMenu">
+              <ul class="navbar">
+                <li>
+                  <a href="#Products">Products</a>
+                </li>
+                <li>
+                  <a href="#Pricing">Pricing</a>
+                </li>
+                <li>
+                  <a href="#FAQ">FAQ</a>
+                </li>
+                <li>
+                  <a href="#Blog">Blog</a>
+                </li>
+              </ul>
+              <div class="header-btns">
+                <button class="header-btn">Sign in</button>
+                <button class="header-btn">Sign up</button>
+              </div>
             </div>
+            <button class="burger-btn" id="burgerBtn"><i class="fas fa-bars"></i><i class="fas fa-times"></i></button>
           </nav>
         </div>
       </header>
@@ -50,11 +48,17 @@
     <section class="hero">
       <div class="container">
         <div class="info">
-          <div class="hero-title">
-            <h1>Monitor your business on real-time dashboard</h1>
-          </div>
+          <h1 class="hero-title">Monitor your business on real-time dashboard</h1>
         </div>
       </div>
     </section>
+    <script>
+      const burgerBtn = document.getElementById('burgerBtn')
+      const burgerMenu = document.getElementById('burgerMenu')
+      burgerBtn.addEventListener('click', event =>{
+        burgerBtn.classList.toggle('open')
+        burgerMenu.classList.toggle('open')
+      })
+    </script>
   </body>
 </html>
