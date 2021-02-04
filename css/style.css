@@ -81,6 +81,7 @@ body {
   line-height: 1;
   color: var(--color);
   background: #fff;
+  padding-bottom: 800px;
 }
 ol, ul {
 	list-style: none;
@@ -124,6 +125,12 @@ button{
   max-width: 1180px;
   margin: 0 auto;
 }
+.title-h2{
+  color: var(--theme-color-1);
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
 
 
 
@@ -163,7 +170,13 @@ button{
 }
 .header-btns button{
   background-color: transparent;
-  border: none;
+  padding: 10px 50px;
+  border: transparent 1px solid;
+  transition: .3s;
+}
+.header-btn:hover{
+  border-radius: 68px;
+  border: var(--color) solid 1px;
 }
 .burger-btn{
   display: none;
@@ -178,6 +191,7 @@ button{
 /* header end */
 /* hero start */
 .hero{
+  position: relative;
   --shift: 500px;
   margin-top: calc(var(--shift) * -1);
   padding-top: calc(var(--shift) + 240px);
@@ -185,9 +199,128 @@ button{
   background: linear-gradient(0deg, var(--theme-color-2) 17px, var(--theme-color-1) 17px);
   transform: skewY(-5deg);
 }
+
 .hero>.container{
   transform: skewY(5deg);
+  position: relative;
 }
+.hero-info{
+  width: 48%;
+}
+.hero-title{
+  color: var(--color-1);
+  font-weight: 700;
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+.hero-txt{
+  line-height: 1.6;
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+.hero-btn{
+  background-color: var(--theme-color-2);
+  padding: 15px 80px;
+  border-radius: 68px;
+  color: var(--color-1);
+}
+.hero-img{
+  width: 980px;
+  height: 780px;
+  position: absolute;
+  right: 0;
+  top: 650px;
+  transform: skewY(5deg);
+}
+/* hero end */
+
+/* features start */
+.features-top{
+  margin-bottom: 130px;
+}
+.features-info{
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 80px;
+}
+.features-title{
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+.features-txt{
+  font-size: 18px;
+  width: 1060px;
+  line-height: 1.6;
+}
+.advantages{
+  display: flex;
+  justify-content: space-between;
+}
+.advantage-section{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  width: 380px;
+}
+.advantage-img{
+  margin-bottom: 25px;
+}
+.advantage-title{
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--theme-color-1);
+  margin-bottom: 15px;
+}
+.advantage-txt{
+  font-size: 16px;
+  line-height: 1.6;
+}
+.features-bottom{
+  margin-bottom: 115px;
+}
+.graph-section{
+  margin-bottom: 120px;
+  display: flex;
+  justify-content: space-between;
+}
+.graph-info{
+  width: 480px;
+  margin-top: 90px;
+}
+.graph-title{
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--theme-color-1);
+  margin-bottom: 30px;
+}
+.graph-txt{
+  font-size: 18px;
+  line-height: 1.6;
+}
+.graph-img{
+  position: relative;
+  right: -20px;
+}
+.graph-reverse{
+  display: flex;
+  flex-direction: row-reverse;
+}
+.graph-reverse img{
+  right: 40px;
+}
+
+
+
+
+
+
+
+
+
 
 
 @media (max-width: 767.98px){
