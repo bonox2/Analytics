@@ -333,28 +333,81 @@ button{
 .plan-main{
   display: flex;
   justify-content: space-between;
+  margin-bottom: 100px;
 }
 .plan-section{
   width: 340px;
   height: 440px;
   padding: 50px 70px 70px 70px;
   background: var(--theme-color-1);
-  box-shadow: 0 18px 50px -15px rgba(25, 42, 89,);
+  box-shadow: 0 18px 50px -15px var(--theme-color-1);
   border-radius: 30px;
   color: var(--color-1);
+  text-align: center;
+  transition: .3s;
 }
-
-
-
-
-
-
-
-
-
+.plan-section-top{
+  width: 220px;
+  border-bottom: 1px solid var(--color);
+  margin-bottom: 30px;
+}
+.plan-section-title{
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.plan-under-txt{
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  color:var(--color);
+}
+.price{
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.plan-section-btn{
+  padding: 15px 80px;
+  border: 1px solid var(--color);
+  border-radius: 68px;
+  transition: .3s;
+}
+.plan-section-btn:hover{
+  background-color: var(--theme-color-2);
+  color: var(--color-1);
+}
+.plan-section:hover{
+  background-color: var(--color-1);
+  color: var(--theme-color-1);
+}
 /* plan end */
+/* footer start */
 
-
+.navbar-footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--color)
+}
+.navbar-footer{
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+}
+.logo-footer{
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  width: 16%;
+  color: var(--color-1);
+  margin-right: 95px;
+}
+.logofooter>img{
+  margin-right: 13px;
+}
 
 
 
