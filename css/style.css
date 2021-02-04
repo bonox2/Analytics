@@ -117,6 +117,7 @@ button{
 :root{
   --theme-color-1: #172755;
   --theme-color-2: #EF2A82;
+  --theme-color-3:  rgb(15, 31, 75,);
   --color:#8794BA;
   --color-1: #fff;
 }
@@ -312,6 +313,46 @@ button{
 .graph-reverse img{
   right: 40px;
 }
+/* features end */
+/* plan start */
+.plan-info{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 80px;
+}
+.plan-title{
+  /* color: var(--color-1); */
+  font-size: 40px;  /* на время */
+}
+.plan-txt{
+  font-size: 18px;
+}
+
+
+.plan-main{
+  display: flex;
+  justify-content: space-between;
+}
+.plan-section{
+  width: 340px;
+  height: 440px;
+  padding: 50px 70px 70px 70px;
+  background: var(--theme-color-1);
+  box-shadow: 0 18px 50px -15px rgba(25, 42, 89,);
+  border-radius: 30px;
+  color: var(--color-1);
+}
+
+
+
+
+
+
+
+
+
+/* plan end */
 
 
 
