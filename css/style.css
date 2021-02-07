@@ -75,14 +75,6 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-body {
-  font-family: "Roboto", system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-  font-size: 16px;
-  line-height: 1;
-  color: var(--color);
-  background: #fff;
-  padding-bottom: 800px;
-}
 ol, ul {
 	list-style: none;
 }
@@ -98,6 +90,17 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+
+body {
+  font-family: "Roboto", system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 16px;
+  line-height: 1;
+  color: var(--color);
+  background: #fff;
+  padding-bottom: 800px;
+  overflow-x: hidden;/*special*/
+}
 *, ::before, ::after{
   box-sizing: border-box;
 }
@@ -106,6 +109,7 @@ a, span {
   text-decoration: none;
   color: inherit;
 }
+
 button{
   color: inherit;
   font: inherit;
@@ -165,6 +169,7 @@ button{
   width: 16%;
   color: var(--color-1);
   margin-right: 95px;
+  letter-spacing: 1.4px;
 }
 .logo>img{
   margin-right: 13px;
@@ -195,14 +200,14 @@ button{
   position: relative;
   --shift: 500px;
   margin-top: calc(var(--shift) * -1);
-  padding-top: calc(var(--shift) + 240px);
-  padding-bottom: 260px;
+  padding-top: calc(var(--shift) + 242px);
+  padding-bottom: 150px;
   background: linear-gradient(0deg, var(--theme-color-2) 17px, var(--theme-color-1) 17px);
-  transform: skewY(-5deg);
+  transform: skewY(-8deg);
 }
 
 .hero>.container{
-  transform: skewY(5deg);
+  transform: skewY(8deg);
   position: relative;
 }
 .hero-info{
@@ -213,29 +218,33 @@ button{
   font-weight: 700;
   font-size: 50px;
   margin-bottom: 15px;
+  line-height: 1.2;
 }
 .hero-txt{
-  line-height: 1.6;
+  line-height: 1.5;
   font-size: 18px;
   margin-bottom: 50px;
 }
 .hero-btn{
   background-color: var(--theme-color-2);
-  padding: 15px 80px;
+  padding: 17px 80px;
   border-radius: 68px;
   color: var(--color-1);
 }
 .hero-img{
-  width: 980px;
-  height: 780px;
+  width: 946px;
+  height: 625px;
+  object-fit: cover;
   position: absolute;
-  right: 0;
-  top: 650px;
-  transform: skewY(5deg);
+  left: 50%;
+  top: -30%;
 }
 /* hero end */
 
 /* features start */
+.features{
+  padding-top: 150px;
+}
 .features-top{
   margin-bottom: 130px;
 }
@@ -249,7 +258,6 @@ button{
 .features-title{
   display: flex;
   justify-content: center;
-  margin-top: 100px;
 }
 .features-txt{
   font-size: 18px;
