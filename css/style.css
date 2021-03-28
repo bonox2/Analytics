@@ -452,9 +452,8 @@ button {
 }
 .plan-section {
   width: 340px;
-  height: 440px;
   padding: 50px 70px 70px 70px;
-  background: var(--theme-color-1);
+  background: var(--theme-color-3);
   box-shadow: 0 18px 50px -15px var(--theme-color-1);
   border-radius: 30px;
   color: var(--color-1);
@@ -462,7 +461,6 @@ button {
   transition: 0.3s;
 }
 .plan-section-top {
-  width: 220px;
   border-bottom: 1px solid var(--color);
   margin-bottom: 30px;
 }
@@ -474,7 +472,7 @@ button {
 .plan-under-txt {
   font-size: 18px;
   line-height: 1.6;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
   color: var(--color);
 }
 .price {
@@ -555,8 +553,20 @@ button {
   letter-spacing: 1.4px;
   color: var(--color);
 }
-.logo-footer > img {
+.logo-footer img {
   margin-right: 13px;
+}
+.footer-icons a{
+  transition: .3s;
+}
+.footer-icons a{
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  border-radius: 50%;
+}
+.footer-icons a:hover{
+  background-color: var(--theme-color-2);
 }
 .icon-footer:not(:first-child) {
   margin-left: 40px;
