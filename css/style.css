@@ -247,7 +247,7 @@ button {
 .navbar {
   display: flex;
   justify-content: space-between;
-  width: 30%;
+  width: 400px;
 }
 .logo {
   display: flex;
@@ -269,9 +269,19 @@ button {
   border: transparent 1px solid;
   transition: 0.3s;
 }
-.header-btn:hover {
+.header-btn-1{
+  transition: .3s;
+}
+.header-btn-1:hover {
+  color: #ef2a82;
+}
+.header-btn{
   border-radius: 68px;
+  transition: .3s;
+}
+.header-btn:hover {
   border: var(--color) solid 1px;
+  color: #ef2a82;
 }
 .burger-btn {
   display: none;
@@ -323,6 +333,11 @@ button {
   padding: 17px 80px;
   border-radius: 68px;
   color: var(--color-1);
+  border: 1px solid transparent;
+  transition: .3s;
+}
+.hero-btn:hover{
+  background-color: var(--color);
 }
 .hero-img {
   width: 946px;
@@ -423,7 +438,7 @@ button {
   margin-bottom: 80px;
 }
 .plan-title {
-  /* color: var(--color-1); */
+  color: var(--color-1);
   font-size: 40px; /* на время */
 }
 .plan-txt {
